@@ -3,17 +3,24 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
-    --color-white: #fff;
-    --color-black: #0c0f0a;
+	--color-black: #1F1F1F;
+	--color-white: #f5f3f3;
+	--color-link: #674721;
+	--color-error: #D40000;
 
-    // Couleurs du projet
-    --color-primary: #c3d898;
-    --color-primary-darker: #285943;
-    --color-secondary: #eb8258;
+	--color-form-muted: #515151;
 
-    --color-neutral-light: #eeeeee;
-    --color-neutral-dark: #888888;
+	--color-foreground: #E9E4DD;
+	--color-background: #FEFAF8;
+	--color-background-darker: #F6F4F2;
+	--color-background-darkest: #F2F0EB;
 
-    --color-fail: #f6511d;
+	--color-border-light: #ABA39D;
+	--color-border-dark: #393431;
+
+	--color-status-valid: #A70D0D;
+	--color-status-pending: #D07827;
+	--color-status-invalid: #159712;
+
+	--effect-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 }

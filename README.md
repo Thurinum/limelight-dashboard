@@ -1,14 +1,2 @@
 # Travail pratique #4 - Tableau de bord
-
-Voici le dossier de base pour la réalisation du travail pratique #3.
-Les gabarits _header.html et _footer.html se trouvant dans le dossier _partials sont utilisés.
-
-## Informations
-
-Toutes les informations en lien avec le TP sont disponible sur le Classroom.
-
-
-
-<br><br><br><hr>
-Préparé par : Matthieu Parent et Jean-François Leblanc  
-_timtools v1.22.1_
+The integration of a dashboard for a dummy crowdfunding website.
