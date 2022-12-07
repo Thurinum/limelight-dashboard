@@ -1,0 +1,31 @@
+header {
+	height: 75px;
+
+	display: grid;
+	grid-template-columns: 1fr 940px 1fr;
+	align-items: center;
+
+	.left,
+	.right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav {
+		width: 950px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.right .user {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.right img {
+		width: 38px;
+	}
+}
