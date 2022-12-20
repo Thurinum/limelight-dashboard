@@ -4,10 +4,34 @@
    ========================================================================== */
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 
-    &:hover {
-        color: var(--color-secondary);
-    }
+	&:hover {
+		color: var(--color-secondary);
+	}
+}
+
+a.button {
+	width: max-content;
+	height: 33px;
+
+	padding: {
+		left: 20px;
+		right: 20px;
+		top: 11px;
+		bottom: 11px;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 14px;
+	font-weight: bold;
+
+	border: solid 1px #ABA39D;
+	border-radius: 10px;
+	background-color: #F2EFEB;
 }

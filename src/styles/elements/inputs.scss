@@ -1,0 +1,23 @@
+input,
+select {
+	height: 33px;
+
+	padding: {
+		left: 9px;
+		right: 9px;
+		top: 4px;
+		bottom: 4px;
+	}
+
+	border: solid 1px var(--color-form-muted);
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: var(--effect-shadow);
+
+	font-size: 16px;
+	line-height: 1;
+}
+
+input::placeholder {
+	color: var(--color-black);
+}

@@ -20,14 +20,23 @@
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
 @import 'elements/body';
 @import 'elements/headings';
+@import 'elements/inputs';
 @import 'elements/links';
 @import 'elements/wrapper';
+@import 'elements/list';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import 'components/icons';
 @import 'components/header';
+@import 'components/menu';
+@import 'components/overview';
+@import 'components/contributions';
+@import 'components/contributors';
+@import 'components/references';
+@import 'components/tiers';
+@import 'components/footer';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

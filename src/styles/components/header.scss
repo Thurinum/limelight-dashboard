@@ -1,31 +1,110 @@
-header {
+body>header {
+	$horizontal-margin: 35px;
+	$inner-width: 340px;
+
 	height: 75px;
 
+	position: relative;
+	z-index: 10;
+
 	display: grid;
-	grid-template-columns: 1fr 940px 1fr;
+	grid-template-columns: var(--spacing-wrapper) 1fr 1fr var(--spacing-wrapper);
 	align-items: center;
 
-	.left,
-	.right {
+	font-size: var(--font-size-header);
+
+	background-color: var(--color-background);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	.logo {
+		margin-left: $horizontal-margin;
+
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		align-content: center;
 	}
 
 	nav {
-		width: 950px;
+		width: $inner-width;
 
 		display: flex;
 		justify-content: space-between;
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
 	}
 
-	.right .user {
+	.search-bar {
+		width: $inner-width;
+		justify-self: right;
+		position: relative;
+
+		img {
+			width: 14px;
+			height: 14px;
+
+			position: absolute;
+			top: 50%;
+			left: 9px;
+			transform: translate(0, -50%);
+		}
+
+		input {
+			width: $inner-width;
+			height: 33px;
+
+			padding: {
+				left: 33px;
+			}
+
+			border: solid 1px var(--color-border-dark);
+			background-color: var(--color-background-dark);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+			font-size: 14px;
+		}
+
+		input::placeholder {
+			color: var(--color-black);
+		}
+	}
+
+	.account {
+		margin-right: $horizontal-margin;
+
 		display: flex;
+		justify-content: center;
+		justify-self: right;
 		align-items: center;
-		gap: 10px;
-	}
+		gap: var(--spacing-section-inner);
 
-	.right img {
-		width: 38px;
+		.profile {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			color: var(--color-link);
+		}
+
+		.profile img {
+			width: 38px;
+		}
+
+		.notifications {
+			display: flex;
+			align-items: bottom;
+			gap: 10px;
+		}
+
+		/* compensate for svg icon spacing */
+		.notifications img {
+			position: relative;
+			top: 4px;
+			left: 4px;
+		}
 	}
 }

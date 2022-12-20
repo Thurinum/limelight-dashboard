@@ -1,0 +1,50 @@
+section.references {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	.chart {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.legend {
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		row-gap: 10px;
+
+		.label {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.tag {
+			width: 20px;
+			height: 20px;
+
+			display: inline-block;
+
+			border: solid 1px var(--color-black);
+			border-radius: 50%;
+			box-shadow: var(--effect-shadow);
+
+			&.blue {
+				background-color: #94B2D4;
+			}
+
+			&.yellow {
+				background-color: #EADDB0;
+			}
+
+			&.red {
+				background-color: #F2BAA9;
+			}
+
+			&.purple {
+				background-color: #B1A6D0;
+			}
+		}
+	}
+}

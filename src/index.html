@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Limelight Crowdfunding</title>
+	<title>Limelight Crowdfunding - Tableau de bord</title>
 
 	<link rel="stylesheet" href="styles/main.css" />
 
@@ -13,36 +13,58 @@
 
 <body>
 	<header>
-		<a class="left" href="#">
+		<a class="logo" href="#">
 			<img src="assets/images/logo.svg" alt="Limelight Crowdfunding" />
 		</a>
+
 		<nav>
-			<span class="nav-left">
-				<a class="explore" href="">
-					<img src="assets/icons/header/explore.svg" alt="Icône d'exploration des projets" />
-					Explorer les projets
-				</a>
-				<a class="get-started" href="">
-					<img src="assets/icons/header/get-started.svg" alt="Icône de démarrage du projet" />
-					Démarrer votre projet
-				</a>
-			</span>
-			<span class="nav-right">
-				<img class="search-icon" src="assets/icons/header/search.svg" alt="Icône de recherche" />
-				<input class="search" type="text" placeholder="Rechercher un projet..." />
-			</span>
-		</nav>
-		<span class="right">
-			<a class="user" href="">
-				Thurinum
-				<img src="assets/images/user-owo.webp" alt="Image de profil de Thurinum" />
+			<a class="explore" href="#">
+				<img src="assets/icons/header/explore.svg" alt="Icône d'exploration des projets" />
+				Explorer les projets
 			</a>
-			<img class="notifications" src="assets/icons/header/notifications.svg" alt="Voir mes notifications" />
+			<a class="get-started" href="#">
+				<img src="assets/icons/header/get-started.svg" alt="Icône de démarrage du projet" />
+				Démarrer votre projet
+			</a>
+		</nav>
+
+		<span class="search-bar">
+			<img class="search-icon" src="assets/icons/header/search.svg" alt="Icône de recherche" />
+			<input class="search" type="text" placeholder="Rechercher un projet..." />
+		</span>
+
+		<span class="account">
+			<a class="profile" href="#">
+				Thurinum
+				<img src="assets/images/user-owo.webp" alt="Voir mon profil" />
+			</a>
+			<a class="notifications" href="#">
+				<img src="assets/icons/header/notifications.svg" alt="Voir mes notifications" />
+			</a>
 		</span>
 	</header>
 
-	<nav>
-
+	<nav class="menu">
+		<span class="line"></span>
+		<a href="#" class="selected">
+			<span class="icon-wrapper">
+				<span class="selection-mark"></span>
+				<img src="assets/icons/menu/dashboard.svg" alt="Aller vers le tableau de bord" />
+			</span>
+			<span class="label">Tableau de bord</span>
+		</a>
+		<a href="#">
+			<span class="icon-wrapper">
+				<img src="assets/icons/menu/contributors.svg" alt="Voir les contributeurs" />
+			</span>
+			<span class="label">Contributeurs</span>
+		</a>
+		<a href="#">
+			<span class="icon-wrapper">
+				<img src="assets/icons/menu/campaign-settings.svg" alt="Aller vers la gestion de campagne" />
+			</span>
+			<span class="label">Gérer ma campagne</span>
+		</a>
 	</nav>
 
 	<main>
@@ -50,7 +72,51 @@
 	</main>
 
 	<footer>
+		<div class="wrapper">
+			<div class="about">
+				<span class="logo">
+					<img src="assets/images/logo.svg" alt="Crowdfunding platform" />
+				</span>
 
+				<p>Pionnière du sociofinancement en Antartique, la platforme Limelight permet à chacun de mettre
+					sur pied son projet de rêve.</p>
+
+				<span class="social">
+					<a href="#"><img src="assets/icons/social-alt/linkedin_alt.svg" alt="Linkedin"></a>
+					<a href="#"><img src="assets/icons/social-alt/facebook_alt.svg" alt="Facebook"></a>
+					<a href="#"><img src="assets/icons/social-alt/twitter_alt.svg" alt="Twitter"></a>
+					<a href="#"><img src="assets/icons/social-alt/instagram_alt.svg" alt="Instagram"></a>
+				</span>
+			</div>
+
+			<div class="links">
+				<nav>
+					<h6>À Propos</h6>
+					<ul>
+						<li>Foire aux questions</li>
+						<li>Sociofinancement</li>
+						<li>Partenaires</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6>Politiques</h6>
+					<ul>
+						<li>Termes et conditions</li>
+						<li>Énoncé de confidentialité</li>
+						<li>Politiques des cookies</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6>Centre d’aide</h6>
+					<ul>
+						<li>Activation du compte</li>
+						<li>Documentation</li>
+						<li>Forum utilisateur</li>
+					</ul>
+				</nav>
+			</div>
+			<p class="legal">&copy; 2022 RSM Designing Services Ltd. Tous droits octroyés.</p>
+		</div>
 	</footer>
 </body>
 

@@ -1,0 +1,45 @@
+section.tiers {
+	$image-size: 38px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	.left {
+		gap: 15px;
+	}
+
+	.image-icon {
+		padding-left: $image-size / 2;
+	}
+
+	.image {
+		height: $image-size;
+
+		position: relative;
+		top: 5px;
+		scale: 1.4;
+	}
+
+	.name {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.value {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.favorite {
+		width: 22px;
+		height: 22px;
+
+		scale: 1.4;
+	}
+
+	.quantity {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}

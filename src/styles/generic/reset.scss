@@ -6,30 +6,30 @@
 // Références: https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing
 
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 // Cette classe n'existe pas pour voir, elle sert uniquement que pour le titre TimTools de base ;)
 .tt {
-    align-items: center;
-    color: var(--color-black);
-    display: flex;
-    height: 100vh;
-    font: 800 75px/1.5 helvetica, sans-serif;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    margin: 0;
-    top: 0;
-    width: 100vw;
+	align-items: center;
+	color: var(--color-black);
+	display: flex;
+	height: 100vh;
+	font: 800 75px/1.5 helvetica, sans-serif;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	margin: 0;
+	top: 0;
+	width: 100vw;
 }

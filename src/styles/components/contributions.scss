@@ -1,0 +1,19 @@
+section.contributions {
+	display: flex;
+	flex-direction: column;
+
+	header span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	select {
+		width: 209px;
+	}
+
+	input[type="date"] {
+		width: 129px;
+	}
+}

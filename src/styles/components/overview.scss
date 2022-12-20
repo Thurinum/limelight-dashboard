@@ -1,0 +1,74 @@
+section.overview {
+	height: 190px;
+	padding: 0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	text-align: center;
+	background-color: var(--color-background-darkest);
+
+	.overview-card {
+		position: relative;
+	}
+
+	.overview-card>div {
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon {
+		width: auto;
+		height: 48px;
+
+		position: absolute;
+		left: 50%;
+		top: -24px;
+		transform: translateX(-50%);
+		z-index: 10;
+
+		object-fit: cover;
+	}
+
+	.primary {
+		font-size: var(--font-size-overview-primary);
+		font-weight: 500;
+		filter: drop-shadow(var(--effect-shadow));
+	}
+
+	.secondary {
+		font-size: var(--font-size-overview-secondary);
+	}
+
+	.tertiary {
+		font-size: var(--font-size-overview-tertiary);
+	}
+
+	.funds-collected {
+		background: linear-gradient(90deg, var(--color-progress) 30%, transparent 31%);
+
+		.primary {
+			color: #455944;
+		}
+	}
+
+	.days-left {
+		background: linear-gradient(90deg, var(--color-progress) 65%, transparent 66%);
+
+		.primary {
+			color: #2B475B;
+		}
+	}
+
+	.likes {
+		background: linear-gradient(90deg, var(--color-progress) 44%, transparent 45%);
+
+		.primary {
+			color: #6C2626;
+		}
+	}
+}

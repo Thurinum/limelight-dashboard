@@ -5,9 +5,46 @@
    ========================================================================== */
 
 body {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-content);
-    color: var(--color-primary);
-    line-height: 1.6;
-    background: var(--color-primary);
+	font-family: var(--font-primary);
+	font-size: var(--font-size-content);
+	color: var(--color-primary);
+	line-height: 1.6;
+	background: var(--color-white);
+}
+
+main {
+	padding: {
+		top: 80px;
+		bottom: 60px;
+		left: var(--spacing-wrapper);
+		right: var(--spacing-wrapper);
+	}
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-section-outer);
+
+	background-color: var(--color-background);
+	box-shadow: inset 0px 2px 17px rgba(0, 0, 0, 0.2);
+}
+
+section {
+	padding: var(--spacing-section-inner);
+
+	border: solid 1px var(--color-border-dark);
+	border-radius: 10px;
+	background-color: var(--color-background-darker);
+	box-shadow: var(--effect-shadow-strong);
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.small-sections-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-section-outer);
 }
