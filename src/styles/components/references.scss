@@ -48,3 +48,15 @@ section.references {
 		}
 	}
 }
+
+@media screen and (max-width: 850px) {
+	section.references {
+		h2 {
+			display: none;
+		}
+
+		h2.small {
+			display: flex !important;
+		}
+	}
+}

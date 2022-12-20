@@ -13,8 +13,11 @@
 
 <body>
 	<header>
-		<a class="logo" href="#">
-			<img src="assets/images/logo.svg" alt="Limelight Crowdfunding" />
+		<a class="logo" href="index.html">
+			<picture>
+				<source media="(max-width:1200px)" srcset="assets/images/logo_small.svg">
+				<img class="logo-img" src="assets/images/logo.svg" alt="Limelight Crowdfunding" />
+			</picture>
 		</a>
 
 		<nav>
@@ -41,18 +44,54 @@
 			<a class="notifications" href="#">
 				<img src="assets/icons/header/notifications.svg" alt="Voir mes notifications" />
 			</a>
+			<img class="menu-toggle u-hidden" src="assets/icons/menu/toggle.svg" alt="Menu" class="menu-toggle">
+		</span>
+	</header>
+
+	<header class="small u-hidden">
+		<div class="account">
+			<a class="profile" href="#">
+				<img src="assets/images/user-owo.webp" alt="Voir mon profil" />
+			</a>
+
+			<a class="logo" href="#">
+				<img src="assets/images/logo.svg" alt="Limelight Crowdfunding" />
+			</a>
+
+			<a class="notifications" href="#">
+				<img src="assets/icons/header/notifications.svg" alt="Voir mes notifications" />
+			</a>
+		</div>
+
+		<nav>
+			<a class="explore" href="#">
+				<img src="assets/icons/header/explore.svg" alt="Icône d'exploration des projets" />
+				Explorer les projets
+			</a>
+			<a class="get-started" href="#">
+				<img src="assets/icons/header/get-started.svg" alt="Icône de démarrage du projet" />
+				Démarrer votre projet
+			</a>
+		</nav>
+
+		<span class="account">
+			<span class="search-bar">
+				<img class="search-icon" src="assets/icons/header/search.svg" alt="Icône de recherche" />
+				<input class="search" type="text" placeholder="Rechercher un projet..." />
+			</span>
+			<img src="assets/icons/menu/toggle.svg" alt="Menu" class="menu-toggle">
 		</span>
 	</header>
 
 	<nav class="menu">
 		<span class="line"></span>
-		<a href="#" class="selected">
+		<a href="index.html">
 			<span class="icon-wrapper">
 				<img src="assets/icons/menu/dashboard.svg" alt="Aller vers le tableau de bord" />
 			</span>
 			<span class="label">Tableau de bord</span>
 		</a>
-		<a href="#" class="selected">
+		<a href="contributeurs.html" class="selected">
 			<span class="icon-wrapper">
 				<span class="selection-mark"></span>
 				<img src="assets/icons/menu/contributors.svg" alt="Voir les contributeurs" />
@@ -67,53 +106,17 @@
 		</a>
 	</nav>
 
-	<main>
-		<section class="overview">
-			<div class="overview-card">
-				<img class="icon" src="assets/icons/overview/money.svg" alt="Argent collecté" />
-				<div class="funds-collected">
-					<span class="primary">6 961$</span>
-					<span class="tertiary"><strong>collectés</strong> sur</span>
-					<span class="secondary">15 000 $</span>
-				</div>
-			</div>
-
-			<div class="overview-card">
-				<img class="icon" src="assets/icons/overview/time.svg" alt="Temps restant" />
-				<div class="days-left">
-					<span class="primary">11</span>
-					<span class="tertiary">jours <strong>restants</strong> sur</span>
-					<span class="secondary">31</span>
-				</div>
-			</div>
-
-			<div class="overview-card">
-				<img class="icon" src="assets/icons/overview/like.svg" alt="Mentions j'aime obtenues" />
-				<div class="likes">
-					<span class="primary">354</span>
-					<span class="tertiary">mentions <strong>j'aime</strong> sur</span>
-					<span class="secondary">769 <img src="assets/icons/overview/eye.svg" alt="visiteurs"></span>
-				</div>
-			</div>
-		</section>
-
-		<section class="contributions">
-			<header>
-				<h2><img src="assets/icons/contributions/section-icon.svg" alt="Section des contributions" /> Contributions</h2>
-				<span class="param-display">
-					Afficher<select>
-						<option value="money">Montant récolté (CAD)</option>
-						<option value="contributors">Nombre de contributeurs</option>
-					</select>
-				</span>
-				<span class="para-timespan">
-					De <input type="date" placeholder="Début" /> à <input type="date" placeholder="Fin" />
-				</span>
-			</header>
-			<img src="assets/images/line-chart.svg" alt="Graphique du montant récolté et du nombre de contributeurs" />
-		</section>
-
-		<section class="contributors">
+	<main class="contributors-main">
+		<nav class="contributor-actions">
+			<input type="search" placeholder="Rechercher par mot-clé..." />
+			<select class="button">
+				<option value="" selected disabled class="button">Exporter ▼</option>
+				<option value="csv">Texte avec délimiteur (.csv)</option>
+				<option value="xlsx">Microsoft Excel (.xlsx)</option>
+				<option value="ods">Open Document (.ods)</option>
+			</select>
+		</nav>
+		<section class="contributors contributors-full">
 			<header>
 				<h2><img src="assets/icons/contributors/section-icon.svg" alt="Section des contributeurs" />Contributeurs récents</h2>
 				<div class="right">
@@ -129,59 +132,26 @@
 						Nom et contrepartie
 					</span>
 					<span class="right">
-						<span>Montant</span>
-						<span>Date</span>
+						<span class="header-price">Montant</span>
+						<span class="header-date">Date</span>
 						<span>Status</span>
 					</span>
 				</div>
-				<div id="contributors_small" class="list-body">
+				<div id="contributors" class="list-body">
 					<!-- POPULATED BY JS -->
 				</div>
-				<span class="see-more">+ 46 autres dans les 20 derniers jours</span>
 			</div>
-			<a class="button" href="#">
-				Afficher plus de contributeurs
-				<img src="assets/icons/arrow-right.webp" alt="Flèche d'appel à l'action" />
-			</a>
+
+			<span class="pager">
+				<span class="arrow">⟨</span>
+				<span class="page selected">1</span>
+				<span class="page">2</span>
+				<span class="page">3</span>
+				<span class="page">4</span>
+				<span class="page">5</span>
+				<span class="arrow">⟩</span>
+			</span>
 		</section>
-
-		<div class="small-sections-layout">
-			<section class="references">
-				<header>
-					<h2><img src="assets/icons/references/section-icon.svg" alt="Section des références des contributeurs" />Contributeurs récents</h2>
-				</header>
-
-				<img class="chart" src="assets/images/pie-chart.svg" alt="Graphique des références des contributeurs" />
-
-				<div class="legend">
-					<span class="label"><span class="tag blue"></span>Facebook</span>
-					<span class="label"><span class="tag yellow"></span>YouTube</span>
-					<span class="label"><span class="tag red"></span>Site Limelight</span>
-					<span class="label"><span class="tag purple"></span>Autres</span>
-				</div>
-			</section>
-
-			<section class="tiers">
-				<header>
-					<h2><img src="assets/icons/tiers/section-icon.svg" alt="Section des contreparties achetées" />Contreparties achetées</h2>
-				</header>
-
-				<div class="list-view">
-					<div class="list-header">
-						<span class="left">
-							<img class="image-icon" src="assets/icons/tiers/person-pin.svg" alt="Icône de la contrepartie" />
-							Nom et Montant ▼
-						</span>
-						<span class="right">
-							<span>Quantité ▼</span>
-						</span>
-					</div>
-					<div id="tiers" class="list-body">
-						<!-- POPULATED WITH JS -->
-					</div>
-				</div>
-			</section>
-		</div>
 	</main>
 
 	<footer>

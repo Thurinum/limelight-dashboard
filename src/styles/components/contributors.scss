@@ -35,8 +35,12 @@ section.contributors {
 		}
 	}
 
+	.list-header .left img {
+		padding-left: 27px;
+	}
+
 	.list-header .right {
-		width: 321px;
+		width: 242px;
 	}
 
 	.list-body {
@@ -110,6 +114,42 @@ section.contributors {
 
 		img {
 			height: 140%;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	section.contributors {
+		h2 {
+			display: none;
+		}
+
+		h2.small {
+			display: flex !important;
+		}
+
+		.price {
+			font-size: 14px !important;
+		}
+
+		.price b {
+			font-size: 16px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section.contributors {
+
+		.price,
+		.date,
+		.header-price,
+		.header-date {
+			display: none;
+		}
+
+		.right {
+			justify-content: right;
 		}
 	}
 }

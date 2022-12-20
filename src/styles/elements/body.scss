@@ -48,3 +48,19 @@ section {
 	grid-template-columns: 1fr 1fr;
 	gap: var(--spacing-section-outer);
 }
+
+img {
+	max-width: inherit !important;
+}
+
+@media screen and (max-width: 1200px) {
+	:root {
+		--spacing-wrapper: 24px;
+	}
+
+	.small-sections-layout {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+}

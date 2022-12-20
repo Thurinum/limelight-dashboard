@@ -87,3 +87,17 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 1000px) {
+	.wrapper {
+		grid-template-areas: "about" "links" "legal" !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper {
+		.links {
+			flex-direction: column;
+		}
+	}
+}

@@ -3,7 +3,10 @@
    ========================================================================== */
 
 .wrapper {
-	max-width: $breakpoint-md;
-	width: calc(100% - var(--spacing-wrapper));
+	padding: {
+		left: var(--spacing-wrapper) !important;
+		right: var(--spacing-wrapper) !important;
+	}
+
 	margin: 0 auto;
 }

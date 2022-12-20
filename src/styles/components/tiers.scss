@@ -43,3 +43,24 @@ section.tiers {
 		font-weight: bold;
 	}
 }
+
+@media screen and (max-width: 875px) {
+	section.tiers {
+		h2 {
+			display: none;
+		}
+
+		h2.small {
+			display: flex !important;
+		}
+	}
+}
+
+
+@media screen and (max-width: 475px) {
+	section.tiers {
+		.value {
+			display: none;
+		}
+	}
+}

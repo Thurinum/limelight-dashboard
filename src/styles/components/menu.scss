@@ -96,3 +96,9 @@ nav.menu {
 		background-color: var(--color-foreground);
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	nav.menu {
+		display: none;
+	}
+}

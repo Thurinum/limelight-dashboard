@@ -54,7 +54,7 @@ body>header {
 		}
 
 		input {
-			width: $inner-width;
+			width: 100%;
 			height: 33px;
 
 			padding: {
@@ -106,5 +106,100 @@ body>header {
 			top: 4px;
 			left: 4px;
 		}
+	}
+}
+
+body>header.small {
+	height: min-content;
+
+	padding: {
+		top: 16px;
+		left: var(--spacing-wrapper);
+		right: var(--spacing-wrapper);
+		bottom: 16px;
+	}
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+
+	nav {
+		width: 100% !important;
+	}
+
+	.logo,
+	.account {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	body>header {
+		.logo-img {
+			width: 4vmin;
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.search-bar {
+			margin-right: 127px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	body>header {
+		.menu-toggle {
+			display: block !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	body>header {
+		.search-bar {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, 10%);
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body>header {
+		.logo {
+			visibility: hidden;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body>header {
+		display: none;
+
+		.logo {
+			visibility: visible;
+		}
+
+		.search-bar {
+			position: relative;
+			left: 0;
+			top: 0;
+
+			transform: none;
+		}
+
+		.account {
+			width: 100%;
+		}
+	}
+
+	body>header.small {
+		display: flex !important;
 	}
 }

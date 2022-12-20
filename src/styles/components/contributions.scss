@@ -2,7 +2,14 @@ section.contributions {
 	display: flex;
 	flex-direction: column;
 
-	header span {
+	.stats {
+		display: flex;
+		justify-content: right;
+		align-items: right;
+		gap: 20px;
+	}
+
+	.stats span {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -15,5 +22,37 @@ section.contributions {
 
 	input[type="date"] {
 		width: 129px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	section.contributions {
+		header {
+			align-items: flex-start;
+		}
+
+		.stats {
+			flex-direction: column;
+		}
+
+		.stats span {
+			justify-content: right;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section.contributions {
+		header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+
+			margin-bottom: 20px;
+		}
+
+		.stats span {
+			justify-content: left;
+		}
 	}
 }

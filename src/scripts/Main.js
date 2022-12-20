@@ -49,6 +49,9 @@ class Main {
 		// initialize contreparties
 		const list_tiers = document.querySelector("#tiers");
 
+		if (!list_tiers)
+			return;
+
 		fetch("assets/tiers.json")
 			.then((response) => response.json())
 			.then((data) => {
