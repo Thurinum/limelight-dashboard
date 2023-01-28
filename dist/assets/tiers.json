@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Aucune",
+		"quantity": 9
+	},
+	{
+		"name": "Standard",
+		"value": 69,
+		"quantity": 22,
+		"isFavorite": true
+	},
+	{
+		"name": "Plus",
+		"value": 110,
+		"quantity": 13
+	},
+	{
+		"name": "Suprême",
+		"value": 180,
+		"quantity": 7
+	}
+]
